@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:5173",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "MAPdeck",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "icon": [],
+      "identifier": "com.mapdeck.app",
+      "targets": "all"
+    },
+    "windows": [
+      {
+        "title": "MAPdeck",
+        "width": 1600,
+        "height": 980,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}
